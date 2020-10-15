@@ -9,7 +9,7 @@
         selenium: {
           start_process: true,
           server_path: seleniumServer.path,
-          port: 4444,
+          port: 5555,
           cli_args: {
             'webdriver.chrome.driver': chromedriver.path,
           },
@@ -45,8 +45,8 @@
           start_process: true,
           server_path: chromedriver.path,
           host: '127.0.0.1',
-          port: 4444,
-          cli_args: ['--port=4444'],
+          port: 5555,
+          cli_args: ['--port=5555'],
         },
         launch_url: process.env.REACT_APP_LAUNCH_URL,
       },
