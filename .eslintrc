@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "linebreak-style": "off",
+    "react/destructuring-assignment": "off",
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/setupTests.js", "**/**.test.js"] }],
+    "import/no-named-as-default": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": ["warn"],
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-no-bind": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-uses-react": 2,
+    "react/no-unescaped-entities": "off",
+    "no-return-assign": ["off"],
+    "import/prefer-default-export": "off",
+    "prefer-promise-reject-errors": ["off"],
+    "consistent-return": "off",
+    "semi": "error",
+    "max-len": ["error", { "code": 120 }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  }
+}
